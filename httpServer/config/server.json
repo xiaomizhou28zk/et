@@ -1,0 +1,11 @@
+{
+  "rpcServerIP": "127.0.0.1",
+  "rpcServerPort": 50052,
+  "picturePath": "/Users/zhangke/work/entryTask/httpServer/picture/",
+  "pictureUrl": "https://127.0.0.1:8080/picture/",
+  "indexPage": "/Users/zhangke/work/entryTask/httpServer/html/index.html",
+  "loginPage":"https://127.0.0.1:8080/html/index.html",
+  "userInfoPage": "https://127.0.0.1:8080/html/userInfo.html",
+  "connCap": 4,
+  "connTimeOut": 600
+}
