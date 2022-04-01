@@ -174,7 +174,7 @@
     function uploadFile(file) {
         var xhr = new XMLHttpRequest();
         // 设置属性
-        xhr.open('post', 'http://101.42.251.239/uploadFile');
+        xhr.open('post', 'http://101.42.251.239:8080/uploadFile');
         // setRequestHeader post文件的时候不要设置
         var formatData = new FormData();
         formatData.append("picture", document.querySelector("#picture").files[0]);
