@@ -2,10 +2,10 @@
   "rpcServerIP": "127.0.0.1",
   "rpcServerPort": 50052,
   "picturePath": "/home/scottk.zhang/work/et/et/httpServer/picture",
-  "pictureUrl": "https://127.0.0.1:8080/picture/",
+  "pictureUrl": "http://101.42.251.239:8080/picture/",
   "indexPage": "/home/scottk.zhang/work/et/et/httpServer/html/index.html",
-  "loginPage":"https://127.0.0.1:8080/html/index.html",
-  "userInfoPage": "https://127.0.0.1:8080/html/userInfo.html",
+  "loginPage":"http://101.42.251.239:8080/html/index.html",
+  "userInfoPage": "http://101.42.251.239:8080/html/userInfo.html",
   "connCap": 4,
   "connTimeOut": 600
 }

@@ -23,7 +23,7 @@ type userLoginRsp struct {
 }
 
 func reqUserLogin(uid string, client *http.Client) {
-	url2 := "https://127.0.0.1:8080/userLogin"
+	url2 := "http://101.42.251.239:8080/userLogin"
 	data := url.Values{}
 
 	data.Set("uid", uid)
