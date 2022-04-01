@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	path string = "/Users/zhangke/work/entryTask/httpServer/config/server.json"
+	path string = "/home/scottk.zhang/work/et/et/httpServer/config/server.json"
 )
 
 type ServerConfig struct {
