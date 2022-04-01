@@ -1,3 +1,0 @@
-{"level":"info","msg":"server is run...","time":"2021-11-08T11:31:23+08:00"}
-{"level":"error","msg":"err:redigo: nil returned","time":"2021-11-08T11:30:39+08:00"}
-{"level":"error","msg":"err:redigo: nil returned","time":"2021-11-08T11:30:53+08:00"}

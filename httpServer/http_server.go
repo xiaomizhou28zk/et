@@ -43,7 +43,7 @@ func main() {
 		log.Log.Errorf("err:%s", err)
 	}
 
-	http.ListenAndServe("127.0.0.1:8080", nil)
+	http.ListenAndServe("0.0.0.0:8080", nil)
 	if err != nil {
 		log.Log.Errorf("err:%s", err)
 	}
