@@ -132,11 +132,9 @@ func GetUserInfo(w http.ResponseWriter, r *http.Request) {
 // UpdateUserInfo 修改用户信息
 func UpdateUserInfo(w http.ResponseWriter, r *http.Request) {
 	rsp := updateUserInfoRsp{Ret: common.SucCode}
-	fmt.Println("upload +++")
 	sessionInfo, status := checkSession(r)
 	if !status {
 		log.Log.Errorf("get session err")
-		fmt.Println("get session err")
 		rsp.Ret = common.InvalidSession
 		rsp.Url = config.Config.LoginPage
 		msg, _ := json.Marshal(rsp)
@@ -156,14 +154,11 @@ func UpdateUserInfo(w http.ResponseWriter, r *http.Request) {
 	err := updateUserInfoRpc(userInfo)
 	if err != nil {
 		log.Log.Errorf("update user info err:%s", err)
-		fmt.Printf("update user info err:%s", err)
 		rsp.Ret = common.ServerErrCode
 		msg, _ := json.Marshal(rsp)
 		_, _ = w.Write(msg)
 		return
 	}
-	fmt.Println("upload =====")
-
 	msg, _ := json.Marshal(rsp)
 	_, _ = w.Write(msg)
 
