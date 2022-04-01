@@ -38,10 +38,13 @@ func main() {
 
 	registerHandler()
 
-	err = http.ListenAndServeTLS(":8080", "./config/server.crt", "./config/server.key", nil)
+	//err = http.ListenAndServeTLS(":8080", "./config/server.crt", "./config/server.key", nil)
 	if err != nil {
 		log.Log.Errorf("err:%s", err)
 	}
 
-	//http.ListenAndServe("127.0.0.1:8080", nil)
+	http.ListenAndServe("127.0.0.1:8080", nil)
+	if err != nil {
+		log.Log.Errorf("err:%s", err)
+	}
 }
